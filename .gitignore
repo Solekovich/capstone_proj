@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Модели и веса (САМОЕ ВАЖНОЕ)
+# Мы не пушим тяжелые файлы NLLB и адаптеры по 2 ГБ
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Данные
+# Если датасет очень большой, лучше его не пушить
+data/*.csv
+data/*.xlsx
+data/*.json
+
+# Streamlit
+.streamlit/config.toml
+
+# OS
+.DS_Store
+Thumbs.db
