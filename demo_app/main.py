@@ -4,6 +4,8 @@ from peft import PeftModel
 import torch
 import os
 
+st.set_option('client.showErrorDetails', True)
+
 st.set_page_config(page_title="Kazakh MT Calque Eliminator")
 st.title("Eliminating Stylistic Calques in Kazakh MT")
 st.write("Сравнение базового NLLB и дообученных моделей (LoRA и Full Fine-tuning)")
